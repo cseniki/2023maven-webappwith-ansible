@@ -30,7 +30,7 @@ pipeline {
         stage('Deploy') {
             steps {
                sh 'mvn clean package'  
-               sh 'ansible-playbook playbook.yml -i hosts.ini -e "ansible_become_pass=yourpassword"'
+               sh 'ansible-playbook playbook.yml -i hosts.ini '
             }
         }
 
