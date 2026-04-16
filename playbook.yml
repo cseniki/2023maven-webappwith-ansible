@@ -6,7 +6,7 @@
     - name: Copy WAR file to Tomcat
       copy:
       	src: "/var/lib/jenkins/workspace/2023maven-webappwith-ansible" 
-      	dest: "/opt/tomact/webapps/2023MavneWebAppPipelineWithAnsible.war"
+      	dest: "/opt/tomact/webapps/2023maven-webappwith-ansible.war"
       	remote_src: no
       	
     - name: Restart Tomcat
